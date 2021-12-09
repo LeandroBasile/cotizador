@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+  
+}
+body{
+  background: rgb(232, 250, 7);
+  background: radial-gradient(
+    circle,
+    rgba(232, 250, 7, 0.196516106442577) 4%,
+    rgba(23, 104, 182, 0.19931722689075626) 47%,
+    rgba(77, 75, 75, 0.2049194677871149) 85%
+  );
+}
+
+header {
+  width: 100vw;
+  height: 15rem;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  background: rgb(232, 250, 7);
+  background: radial-gradient(
+    circle,
+    rgba(232, 250, 7, 1) 4%,
+    rgba(23, 104, 182, 0.5354516806722689) 47%,
+    rgba(77, 75, 75, 0.8239670868347339) 85%
+  );
+}
+.title {
+  font-size: 10rem;
+  transition: 3s ease-in-out;
+}
+
+.container {
+  display: inline-block;
+}
+.title:hover {
+  color: white;
+}
+#principal {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#valRef {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+form {
+  
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.form {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+  gap: 1rem;
+}
+
+.ref {
+  font-size: 2rem;
+  display: inline-block;
+  border-bottom: 0.1rem black solid;
+}
+.botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+#btnCotizar,
+#btnEuro,
+#btnDolar,
+#mostrar {
+  width: 10rem;
+  height: 5rem;
+  font-size: 2rem;
+}
+#mostrar {
+  width: 100vw;
+  min-height: 5rem;
+}
+input {
+  max-width: 20rem;
+  padding: 1rem;
+}
+#resultado1 {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  width: 100%;
+  min-height: 5rem;
+  border: 1px black solid;
+  box-sizing: content-box;
+}
+#resultado {
+  display: none;
+  justify-content: center;
+  /* display:flex; */
+}
+
+#listadoCotizaciones {
+  width: 100vw;
+  height: 5rem;
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#listado {
+  display: none;
+
+  padding: 1rem;
+  width: auto;
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    justify-content: center;
+  }
+  .title {
+    font-size: 5rem;
+  }
+}

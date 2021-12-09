@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moneda Extranjera</title>
+    <!-- <script src="js/main2.js"></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Open+Sans:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+      <span class="title" 'C';">C</span>
+      <span class="title" 'O';">O</span>
+      <span class="title" 'T';">T</span>
+      <span class="title" 'I';">I</span>
+      <span class="title" 'Z';">Z</span>
+      <span class="title" 'A';">A</span>
+      <span class="title" 'R';">R</span>
+      <span class="title" 'G';">G</span>
+    </div>
+  </header>
+  <div id="principal">
+    <div id="valRef">
+      <!-- <select name="" id="selec" ></select>
+      <button type="button"  class="btn btn-outline-primary" id="consultare">CONSULTAR</button>
+      <div id="consultar"></div> -->
+
+    </div>
+    <form action="">
+      <div class="form">
+        <input type="number" name="" id="edad" placeholder="EDAD" /><br />
+        <input
+          type="text"
+          pattern="[a-zA-Z+]"
+          id="nombreApellido"
+          placeholder="NOMBRE Y APELLIDO"
+          
+        /><br />
+        <input
+          type="number"
+          id="pesos"
+          placeholder="MONTO A COTIZAR"
+        /><br />
+
+        <div class="botones">
+          <!-- <input type="button" value="DOLAR" id="btnDolar" /> -->
+          <button type="button" class="btn btn-outline-primary" id="btnCotizar">COTIZAR</button>
+          <select name="" id="select"></select>
+          <button type="button"  class="btn btn-outline-primary" id="btnDolar">DOLAR</button>
+          <button type="button" class="btn btn-outline-primary" id="btnEuro">EURO</button>
+          <!-- <input type="button" value="EURO" id="btnEuro" /> -->
+
+        </div>
+
+        <div id="resultado1"> <div id="resultado"></div></div>
+      </div>
+        
+     
+    </form>
+  </div>
+    
+  <div id="listadoCotizaciones" >
+    <button type="button" class="btn btn-outline-primary" id="mostrar">Ultimas Cotizaciones</button>
+
+            <ul id="listado"></ol>    
+  </div>
+
+
+  <footer></footer>
+
+  <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+  ></script>
+    
+  <script src="js/main3.js"></script>
+  </body>
+</html>
